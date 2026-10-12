@@ -1,43 +1,18 @@
-<br />
-<b>Warning</b>:  Undefined array key "ss" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>9</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "se" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>16</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "ys" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>22</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "ms" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>22</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "ds" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>22</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "hs" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>22</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "is" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>22</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "ye" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>23</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "me" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>23</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "de" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>23</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "he" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>23</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "ie" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>23</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "addr" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>26</b><br />
-<br />
-<b>Warning</b>:  Undefined array key "desc" in <b>C:\xampp\htdocs\ics\download-ics.php</b> on line <b>27</b><br />
-<br />
-<b>Warning</b>:  Undefined variable $values in <b>C:\xampp\htdocs\ics\ICS.php</b> on line <b>145</b><br />
-<br />
-<b>Warning</b>:  Undefined variable $values in <b>C:\xampp\htdocs\ics\ICS.php</b> on line <b>145</b><br />
-<br />
-<b>Fatal error</b>:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (-- :AM) at position 0 (-): Unexpected character in C:\xampp\htdocs\ics\ICS.php:152
-Stack trace:
-#0 C:\xampp\htdocs\ics\ICS.php(152): DateTime-&gt;__construct('-- :AM')
-#1 C:\xampp\htdocs\ics\ICS.php(142): ICS-&gt;format_timestamp('-- :AM')
-#2 C:\xampp\htdocs\ics\ICS.php(95): ICS-&gt;sanitize_val('-- :AM', 'dtstart')
-#3 C:\xampp\htdocs\ics\ICS.php(91): ICS-&gt;set('dtstart', '-- :AM')
-#4 C:\xampp\htdocs\ics\ICS.php(85): ICS-&gt;set(Array)
-#5 C:\xampp\htdocs\ics\download-ics.php(30): ICS-&gt;__construct(Array)
-#6 {main}
-  thrown in <b>C:\xampp\htdocs\ics\ICS.php</b> on line <b>152</b><br />
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BI//XYZ Event//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+BEGIN:VEVENT
+UID:XYZEVENT20261020@bi.com
+DTSTAMP:20261009T000000Z
+SUMMARY:XYZ Event
+DESCRIPTION:aaaaaaaaaaaabbbbbbbbbbbbcccccccccc
+LOCATION:Bangalore, India
+ORGANIZER;CN=ABC:MAILTO:no-reply@example.com
+DTSTART;TZID=Asia/Kolkata:20261020T190000
+DTEND;TZID=Asia/Kolkata:20261020T200000
+END:VEVENT
+
+END:VCALENDAR
